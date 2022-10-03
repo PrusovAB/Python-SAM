@@ -3,7 +3,7 @@ print('''
 '''
 )
 
-def summiyogo(n): #Функция с аргументом 
+def summ_iyogo(n): #Функция с аргументом 
     sum = 0 # Счетчик
     for i in number: # Цикл с пробужкой 
         sum += int(i) 
@@ -11,7 +11,7 @@ def summiyogo(n): #Функция с аргументом
 
 number = input("Введите вещественное число: ").replace(".", "").replace(",", "")
 
-print(summiyogo(number))
+print(summ_iyogo(number))
 
 # Метод replace() возвращает копию строки, в которой все вхождения подстроки заменяются другой подстрокой.
 
