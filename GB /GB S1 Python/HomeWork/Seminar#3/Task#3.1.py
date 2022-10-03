@@ -7,3 +7,10 @@ print(
 
     '''
 )
+
+lost1 = (2,3,5,9,3)
+res =0 
+for i in range(len(lost1)):
+    if i % 2 != 0:
+        res += lost1[i]
+print(res)
