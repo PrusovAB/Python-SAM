@@ -24,21 +24,25 @@ print(
 
 
 from random import randint
+#https://python-scripts.com/random?ysclid=l8vtjp16ri763264852
 
 
 number = int(input('Введите размер списка:  '))
-list = []
-list2 = []
+list_1 = [] # счетчик с изменяемым значением 
+list_2 = []
 
-for i in range(number):
-    list.append(randint(0, 9))
+for i in range(number): # генерация чисел через list
+    list_1.append(randint(0, 9))
+    print(list_1)
 
-for i in range(len(list)):
-    while i < len(list)/2 and number > len(list)/2:
+for i in range(len(list_1)):
+    while i < len(list_1)/2 and number > len(list_1)/2:
         number = number - 1
-        a = list[i] * list[number]
-        list2.append(a)
+        a = list_1[i] * list_1[number]
+        list_2.append(a)
         i += 1
 
-print(list)
-print(list2)
+print('Ответ: ',list_1)
+print('Ответ: ',list_2)
+
+input("\n\nНажмите Enter чтобы выйти.")
