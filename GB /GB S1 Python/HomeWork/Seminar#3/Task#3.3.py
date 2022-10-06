@@ -7,35 +7,30 @@ print(
 - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
     '''
 )
-# Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
-
-# Пример:
-
-# - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
 from random import uniform
+#import uniform
+#Этот метод возвращает вещественное число r такое, что x <= r < y.
 
-
-n = int(input('Введите размер списка '))
-list1 = []
+n = int(input('Введите размер списка:  '))
+list_1 = []
 for i in range(n):
     f = uniform(0, 9)
-    list1.append(round(f, 2))
+    list_1.append(round(f, 2))
 
-min = list1[0]
-max = 0
-for i in range(len(list1)):
+min_1 = list_1[0]
+max_1 = 0
+for i in range(len(list_1)):
     
-    if max < list1[i]:
-        max = list1[i]
-    if min > list1[i]:
-        min = list1[i]
-dif = (max - int(max)) - (min - int(min))
+    if max_1 < list_1[i]:
+        max_1 = list_1[i]
+    if min_1 > list_1[i]:
+        min_1 = list_1[i]
+dif = (max_1 - int(max_1)) - (min_1 - int(min_1))
 
-print(list1)
-print(max, min)
+print('Список: ',list_1)
+print('Максимальное число: ',max_1,'Минимальное число: ', min_1)
+
 print(round(dif,2))
 
-# lst = [1.1, 1.2, 3.1, 5, 10.01]
-# new_lst = [round(i%1,2) for i in lst]
-# print(lst, '=>', max(new_lst) - min(new_lst)) - Вариант проще
+input("\n\nНажмите Enter чтобы выйти.")
