@@ -18,7 +18,7 @@ print(
     """
 )
 
-lost_1 = (2, 3, 5, 9, 3)# кортеж 
+lost_1 = (2, 3, 5, 9, 3)  # кортеж
 res = 0
 for i in range(len(lost_1)):
     if i % 2 != 0:
