@@ -1,15 +1,11 @@
 print(
-    '''
+    """
     4 Задана натуральная степень k. Сформировать случайным образом список коэффициентов (значения от 0 до 100) многочлена и записать в файл многочлен
 Пример
 k=2 => 2x² + 4x + 5 = 0 или x² + 5 = 0 или 10*x² = 0
-    '''
+    """
 )
-# Задана натуральная степень k. Сформировать случайным образом список коэффициентов (значения от 0 до 100) многочлена и записать в файл многочлен степени k.
 
-# Пример:
-
-# - k=2 => 2*x² + 4*x + 5 = 0 или x² + 5 = 0 или 10*x² = 0
 
 import itertools
 from random import randint
@@ -20,7 +16,7 @@ from random import randint
 # def random_numbers(k):
 #     numbers = [randint(0,100) for i in range(k)]
 #     while numbers[0] == 0:
-#         numbers[0] = randint(1, 10) 
+#         numbers[0] = randint(1, 10)
 #     return numbers
 
 # def urov(k, numbers):
@@ -50,31 +46,31 @@ from random import randint
 #     data.write(check_list2)
 
 # Лучшее рещение
-print('Чтобы сформировать многочлен степени k и записать в файл, введите степень k! ')
+print("Чтобы сформировать многочлен степени k и записать в файл, введите степень k! ")
 k = int(input("Введите степень k: "))
 
 factor = []
-for i in range(1, k +2):
+for i in range(1, k + 2):
     factor.append(randint(1, 101))
 
 result = []
 for i in range(len(factor)):
     if k == 1:
-        result.append(f'{factor[i]}*x')
+        result.append(f"{factor[i]}*x")
     elif k == 0:
-        result.append(f'{factor[i]}')
+        result.append(f"{factor[i]}")
     else:
-        result.append(f'{factor[i]}*x^{k}')
+        result.append(f"{factor[i]}*x^{k}")
     signs = randint(0, 1)
     if signs == 1:
-        result.append('+')
+        result.append("+")
     elif signs == 0:
-        result.append('-')
+        result.append("-")
     k -= 1
 
 result.pop(-1)
-result.append('=0')
+result.append("=0")
 
-record = open('data.txt', 'w')
-record.write(''.join(result))
+record = open("data.txt", "w")
+record.write("".join(result))
 record.close()

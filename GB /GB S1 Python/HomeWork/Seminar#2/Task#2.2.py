@@ -21,7 +21,7 @@ if(num%1==0 and num>=0):
     # Вычисляем факториал числа num
     for i in range(1, num+1):
         factorial1 = i*factorial1
-        print(factorial1, end=' *')
+        print(factorial1,sep='*') #sep не работает? почему ? 
     # Выводим результат на экран
     print(f'\n{num}! = {factorial1}')
 # Если num - отрицательное или нецелое число, выводим сообщение об ошибке
