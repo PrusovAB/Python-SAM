@@ -1,4 +1,5 @@
-t\\\\\\\![image](https://user-images.githubusercontent.com/106627508/194627608-8c05f444-1c76-4cd3-a7a3-571ae623bf86.png)
+
+![image](https://user-images.githubusercontent.com/106627508/194627608-8c05f444-1c76-4cd3-a7a3-571ae623bf86.png)
 
 
 # HOMEWORK # 5
