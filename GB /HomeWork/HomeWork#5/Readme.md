@@ -1,6 +1,6 @@
+![image](https://user-images.githubusercontent.com/106627508/194627608-8c05f444-1c76-4cd3-a7a3-571ae623bf86.png)
 
 
-<div class="vep-video-block"><object type="application/x-shockwave-flash" data="http://gfto.ucoz.ru/AndroidKG/71.swf" height="70" width="600"><param name="wmode" value="transparent"><param name="wmode" value="transparent"><param name="wmode" value="transparent"><param name="wmode" value="transparent"><param name="wmode" value="transparent"><param name="wmode" value="transparent"><param name="movie" value="http://gfto.ucoz.ru/AndroidKG/71.swf"><param name="wmode" value="transparent"><param name="flashvars" value="&in_title=HOMEWORK 5&"></object></div>
 
 # HOMEWORK # 5
 ### Входные и выходные данные хранятся в отдельных текстовых файлах.
