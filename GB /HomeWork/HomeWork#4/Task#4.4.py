@@ -25,10 +25,13 @@ def polynomial(num: int):
     poly = "" # пустая строка
     num_list = range(0, 10) # список итерированный
 
-    with open("poly.txt", "a", encoding="utf-8") as my_f:
+    with open("Task44.txt", "a", encoding="utf-8") as my_f:
         for i in range(num, 0, -1):
             value = choice(num_list) # выбрать объект из итерированного списка
             if value: # если объект не 0
                 poly += f"{value}*x^{i} {choice('+-')} " # сделать запись в строку с выбором + -
 
         my_f.write(f"{poly}{choice(num_list)} = 0\n") # сделать запись в файл
+
+for _ in range(3):
+    polynomial(int(input('Введите данные: ')))
