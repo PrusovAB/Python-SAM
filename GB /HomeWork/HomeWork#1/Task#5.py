@@ -7,4 +7,3 @@ if (number_four % 5 == 0 and number_four % 10 == 0 or number_four % 15 == 0) and
     print("Кратно")
 else:
     print("Не кратно")
- 

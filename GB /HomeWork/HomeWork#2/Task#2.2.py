@@ -32,4 +32,4 @@ num = int(input())
 sum_1 = 1
 for i in range(num):
     sum_1 *= i + 1
-    print(sum_1,end='*')
+    print(sum_1, end='*')

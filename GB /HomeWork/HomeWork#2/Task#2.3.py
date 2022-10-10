@@ -9,25 +9,26 @@ print(
     '''
 )
 
+
 def sequenceСalculation(n):
-    res = {i:round((1 + 1 / i)**i, 2) for i in range(1, n+1)}
+    res = {i: round((1 + 1 / i) ** i, 2) for i in range(1, n + 1)}
     return res
+
 
 n = int(input("Введите число N: "))
 
 print(sequenceСalculation(n))
 
-
-#Вариант с списком 
+# Вариант с списком
 num = int(input('Ведите число N: '))
-sum_num = 0 
+sum_num = 0
 list_nums = []
 
-for i in range (1,num+1):
-    renault = round((1+1/i)**i)
-    #round() - округляет до целого 
+for i in range(1, num + 1):
+    renault = round((1 + 1 / i) ** i)
+    # round() - округляет до целого
     list_nums.append(renault)
-    sum_num+=renault
+    sum_num += renault
 
 print(list_nums)
 print(sum_num)

@@ -20,7 +20,6 @@ print(
     """
 )
 
-
 from random import randint
 
 # https://python-scripts.com/random?ysclid=l8vtjp16ri763264852
