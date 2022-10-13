@@ -65,3 +65,7 @@ def game(field):
     draw_field(field)
                 
 game(field)
+
+file = open('Task5.3.txt','w', encoding='utf-8')
+file.write(f'{field}\n')
+file.close()

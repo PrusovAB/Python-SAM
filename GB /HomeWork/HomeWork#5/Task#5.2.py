@@ -47,3 +47,17 @@ if flag:
     print(f"Выиграл {player1}")
 else:
     print(f"Выиграл {player2}")
+
+# file = open('Task5.2.txt','w', encoding='utf-8')
+# file.write(player1)
+# file.write(player2)
+# file.write(str(value))
+# file.write(str(flag))
+# file.close()
+
+file = open('Task5.2.txt','w', encoding='utf-8')
+file.write(f'{player1}\n')
+file.write(f'{player2}\n')
+file.write(f'{value}\n')
+file.write(f'{flag}\n')
+file.close()

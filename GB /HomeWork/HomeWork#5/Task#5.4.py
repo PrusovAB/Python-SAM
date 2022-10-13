@@ -29,6 +29,11 @@ s = input("Введите текст для кодировки: ")
 print(f"Текст после кодировки: {coding(s)}")
 print(f"Текст после дешифровки: {decoding(coding(s))}")
 
+file = open('Task5.4.txt','w', encoding='utf-8')
+file.write(f'{coding(s)}\n')
+file.write(f'{decoding(coding(s))}\n')
+file.close()
+
  # ```python
     # #что бы открыть и прочитать файл спользуем фунцию open 
     # file = open('my_file.txt') #открывет файл на чтение
